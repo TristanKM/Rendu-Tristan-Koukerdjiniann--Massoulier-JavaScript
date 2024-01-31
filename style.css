@@ -58,12 +58,12 @@ button {
 }
 
 .success {
-    border: 1px solid rgb(81, 150, 2);
-    background-color: rgba(113, 212, 0, 0.4);
+  border: 1px solid rgb(81, 150, 2);
+  background-color: rgba(113, 212, 0, 0.4);
 }
 
 .message-error.visible {
-    display: block;
+  display: block;
 }
 
 #mon-slider {
@@ -86,4 +86,3 @@ button {
   height: 100%;
   object-fit: cover;
 }
-
