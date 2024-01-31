@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="theme">Dark mode</button>
+    <div class="message-error">
+      <ul></ul>
+    </div>
+    <div class="message-success">
+      <ul>Votre formulaire a bien été envoyé</ul>
+    </div>
+    <form id="formulaire">
+      <div>
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom" />
+      </div>
+      <div>
+        <label for="prenom">Prenom</label>
+        <input type="text" name="prenom" id="prenom" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="radios">Seconde :</label>
+        <input type="radio" name="radios" id="radio1" value="radio1" />
+        <label for="radio1">Première :</label>
+        <input type="radio" name="radios" id="radio2" value="radio2" />
+        <label for="radio2">Terminale :</label>
+        <input type="radio" name="radios" id="radio3" value="radio3" />
+      </div>
+      <div>
+        <label for="axe">Mon axe :</label>
+        <select name="axe" id="axe">
+          <option value="">Choisir mon axe</option>
+          <option value="axe1">Jeux Vidéo</option>
+          <option value="axe2">Création et Design</option>
+          <option value="axe3">Animation 3D</option>
+          <option value="axe3">Communication Digital rt E-Business</option>
+          <option value="axe3">Coding</option>
+        </select>
+      </div>
+      <button type="submit">S'inscrire</button>;
+    </form>
+    <br />
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/image/24.png" alt=""></div>
+        <div class="swiper-slide"><img src="/image/25.png" alt=""></div>
+        <div class="swiper-slide"><img src="/image/23.png" alt=""></div>
+        <div class="swiper-slide"><img src="/image/22.png" alt=""></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
