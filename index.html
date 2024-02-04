@@ -7,6 +7,11 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
@@ -16,18 +21,16 @@
       <ul></ul>
     </div>
     <div class="message-success">
-      <ul>
-        Votre formulaire a bien été envoyé
-      </ul>
+      <h1>Votre formulaire a bien été envoyé</h1>
     </div>
-    <form id="formulaire">
+    <form id="formulaire" novalidate>
       <div>
         <label for="nom">Nom</label>
         <input type="text" name="nom" id="nom" />
       </div>
       <div>
-        <label for="prenom">Prenom</label>
-        <input type="text" name="prenom" id="prenom" />
+        <label for="pseudo">Prénom</label>
+        <input type="text" name="pseudo" id="pseudo" />
       </div>
       <div>
         <label for="email">Email</label>
@@ -46,9 +49,9 @@
         <select name="axe" id="axe">
           <option value="">Choisir mon axe</option>
           <option value="axe1">Jeux Vidéo</option>
-          <option value="axe2">Création et Design</option>
+          <option value="axe2">Création & Design</option>
           <option value="axe3">Animation 3D</option>
-          <option value="axe3">Communication Digital rt E-Business</option>
+          <option value="axe3">Communication Digital et E-Business</option>
           <option value="axe3">Coding</option>
         </select>
       </div>
@@ -66,6 +69,62 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
+
+    <br />
+    <br />
+    <br />
+
+    <main class="portfolio">
+      <div class="filters">
+        <ul>
+          <li data-filter="all" class="active">Tous les projets</li>
+          <li data-filter="cd">Création & Design</li>
+          <li data-filter="cm">Communication Digital et E-Business</li>
+          <li data-filter="cdi">Coding</li>
+          <li data-filter="3d">Animation 3D</li>
+          <li data-filter="jv">Jeux vidéo</li>
+        </ul>
+      </div>
+      <div class="portfolio-elements">
+        <div class="card filtr-item" data-category="cd">
+          <div class="card-header">
+            <p class="card-title">Creative Personnal identity</p>
+            <div class="card-axe">Creation & Design</div>
+          </div>
+          <a href="image/12.png"><img src="image/12.png" alt="Motion" /> </a>
+        </div>
+        <div class="card filtr-item" data-category="3d">
+          <div class="card-header">
+            <p class="card-title">Modélisation personnage</p>
+            <div class="card-axe">Animation 3D</div>
+          </div>
+          <a href="image/14.png"><img src="image/14.png" alt="Showreel" /> </a>
+        </div>
+        <div class="card filtr-item" data-category="jv">
+          <div class="card-header">
+            <p class="card-title">Plateformer</p>
+            <div class="card-axe">Jeu Vidéo</div>
+          </div>
+          <a href="image/16.png"><img src="image/16.png" alt="Showreel" /> </a>
+        </div>
+        <div class="card filtr-item" data-category="cdi">
+          <div class="card-header">
+            <p class="card-title">Site Web</p>
+            <div class="card-axe">Coding Digital Innovation</div>
+          </div>
+          <a href="image/12.png"><img src="image/12.png" alt="Showreel" /> </a>
+        </div>
+        <div class="card filtr-item" data-category="cm">
+          <div class="card-header">
+            <p class="card-title">Campagne SPA</p>
+            <div class="card-axe">Com et Marketing</div>
+          </div>
+          <a href="image/14.png"><img src="image/14.png" alt="Showreel" /> </a>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simplelightbox.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
